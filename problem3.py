@@ -1,6 +1,4 @@
 from collections import Counter
-
-
 with open("data.txt","r") as file:
     file= file.readlines()
     content= list(map(str.strip,file)) 
@@ -16,5 +14,6 @@ with open("data.txt","r") as file:
 
 total_count= Counter(all_words)
 highest_count= total_count.most_common(1)
-print(highest_count[0][0])
+print(splited_words)
+# print(highest_count[0][0])
     
